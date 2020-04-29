@@ -21,7 +21,7 @@ class TransactionsRepository extends Repository<Transaction> {
             break;
 
           case 'outcome':
-            accumulator.outcome = +Number(transaction.value);
+            accumulator.outcome += Number(transaction.value);
             break;
 
           default:
